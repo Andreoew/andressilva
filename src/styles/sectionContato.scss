@@ -1,0 +1,113 @@
+#section {
+    //#835adf;  #202024;
+    $bg-color: #141318;
+    $bg-color2: #835a15;
+    $bg-container-a: #1d1b20;
+    $bg-expert: #d6d2dda8;
+
+
+    $text-color: #fff;
+    $text-color2: black;
+
+    aside {
+        height: 800px;
+        background: $bg-color2;
+        text-align: center;
+        color: $text-color;
+        border-top: 0.3px solid #d6d2dda8;
+        // border-bottom: 1px solid #d6d2dda8;
+
+
+
+    }
+
+    @mixin box-shadow($color) {
+
+        box-shadow: 1px 1px 2px 1px $color;
+        border-top-right-radius: 25%;
+        border-bottom-left-radius: 25%;
+        // margin: 0;
+        margin-top: 170px;
+        margin-bottom: 0;
+    }
+
+    .titulo-contato,
+    h1 {
+        display: inline-block;
+        height: 30px;
+        position: relative;
+        text-align: center;
+        font-size: 30px !important;
+        margin-top: 1px;
+        padding: 1px;
+
+        h2 {
+            display: block;
+            text-align: center;
+            height: 5px;
+            font-size: 20px;
+            margin-top: 1px;
+            padding: 1px;
+        }
+    }
+
+
+
+    .container-a {
+        // display: inline-block;
+        // position: relative;
+
+        width: 650px;
+        // max-width: 95%;
+        // height: 500px;
+        // background: #fff;
+        margin: 2 !important;
+        margin-top: 30px;
+
+        p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+
+
+
+
+    }
+
+    .container-b {
+
+        position: absolute;
+        text-align: center;
+        width: 650px;
+        max-width: 100%;
+        margin-top: 15px;
+
+        border-top-right-radius: 25%;
+
+        .escritorio {
+
+            img {
+                @include box-shadow(#d6d2dda8);
+                position: relative;
+                height: 50%;
+                width: 100%;
+                border-top-right-radius: 25%;
+                border-bottom-left-radius: 25%;
+
+
+            }
+        }
+
+
+    }
+
+    // main {
+    //     background: $bg-expert;
+    //     height: 300px;
+    //     text-align: center;
+    //     color: $text-color2;
+    // }
+
+
+}

@@ -1,0 +1,36 @@
+#sectionBlog {
+    $text-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        color: $text-color;
+        $bg-color: #835a15;
+        background: $bg-color;
+        height: 900px;
+
+        h1 {
+            color: $text-color;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .container-a {
+        display: inline-block;
+        width: 20%;
+        background: black;
+    }
+
+    .container-b {
+        display: inline-block;
+        width: 60%;
+        background: red;
+    }
+
+    .container-c {
+        display: inline-block;
+        width: 20%;
+        background: green;
+    }
+}

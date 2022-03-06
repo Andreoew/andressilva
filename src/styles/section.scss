@@ -1,0 +1,116 @@
+#section {
+    //#835adf;  #202024;
+    $bg-color: #141318;
+    $bg-container-a: #1d1b20;
+    $bg-expert: #d6d2dda8;
+
+    $text-color: #fff;
+    $text-color2: black;
+
+    aside {
+        height: 700px;
+        background: $bg-color;
+        text-align: center;
+        color: $text-color;
+
+
+    }
+
+    @mixin box-shadow($color) {
+
+        box-shadow: 1px 1px 2px 1px $color;
+        border-top-right-radius: 25%;
+        border-bottom-left-radius: 25%;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+
+    .container-a {
+        position: absolute;
+        text-align: center;
+        width: 650px;
+        max-width: 100%;
+
+        border-top-right-radius: 25%;
+
+        .escritorio {
+
+            img {
+                @include box-shadow(#835a15);
+                position: relative;
+                height: 50%;
+                width: 100%;
+                border-top-right-radius: 25%;
+                border-bottom-left-radius: 25%;
+
+
+            }
+        }
+
+
+    }
+
+    .container-b,
+    h1 {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        width: 659px;
+        max-width: 95%;
+        height: 500px;
+        // background: $bg-container-b;
+        // @include box-shadow(#000); 
+        margin: 2;
+        margin-top: 30px;
+
+        p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+
+    }
+
+    main {
+        background: $bg-expert;
+        height: 400px;
+        text-align: center;
+        color: $text-color2;
+
+
+        .advogados {
+            display: inline-block;
+            height: 75%;
+            @include box-shadow(#835a15);
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 15em;
+            margin-top: 5px;
+
+
+            img {
+                border-top-right-radius: 25%;
+                border-bottom-left-radius: 25%;
+            }
+
+        }
+
+        strong,
+        p {
+            display: block;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,122 @@
+#icons {
+    $bg-footer: #121214;
+    $bg-footer2: #fff;
+    $bg-icon: #835a15;
+    $hover-fone: #835a15;
+    background: $bg-footer;
+
+    .endereco {
+        margin-left: 30px;
+
+
+    }
+
+
+
+    aside {
+        // flex: 6; #414042
+
+        display: flex;
+        flex-direction: column;
+        // border-top: 3px solid #835a15;
+        // border-bottom: 1px solid #835a15;
+        border-top: 1px solid #d6d2dda8;
+
+        #fone {
+            p:hover {
+                color: #835a15 !important;
+            }
+
+            cursor: pointer;
+        }
+
+        #logo {
+            display: inline-block;
+            justify-content: right;
+            position: absolute;
+            padding: 0 0 0 1040px;
+            height: 250px;
+            width: 250px;
+        }
+
+
+
+        strong {
+            font: 700 30px 'Poppins', sans-serif;
+            line-height: 42px;
+            margin-top: 16px;
+            color: #f8f8f8;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 32px;
+            margin-top: 16px;
+            color: #f8f8f8;
+
+
+        }
+    }
+
+    main {
+        border-top: 0.3px solid #835a15;
+        margin-top: 2px;
+        padding-top: 15px;
+
+        svg {
+            width: 50px;
+            height: 50px;
+            fill: white;
+            /* #65bbf2 */
+            // stroke: black;
+            // stroke-width: 4px;
+            // stroke-dasharray: 2266; 
+            // stroke-dashoffset: 0; 
+            // animation: 5s desenha infinite alternate;
+            stroke: none;
+            fill-rule: nonzero;
+            // fill:rgb(0%,0%,0%);
+            fill-opacity: 1;
+        }
+
+        svg:hover path {
+            fill: #835a15;
+        }
+
+
+
+        .contatos {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            margin-left: 30px;
+
+
+        }
+
+        .redesocial {
+            display: inline-block;
+            // align-items: right;
+            justify-content: right;
+            margin-bottom: 50px;
+            padding: 0 0 0 950px;
+            fill: transparent;
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+}
