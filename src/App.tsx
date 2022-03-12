@@ -2,9 +2,14 @@ import React from "react"
 import { AppRoutes } from "./Routes"
 
 
+
 function App() {
   return (
-    <AppRoutes />
+    <div className="App">
+      <AppRoutes />
+
+    </div>
+
 
   )
 }
