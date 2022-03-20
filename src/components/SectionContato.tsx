@@ -1,25 +1,26 @@
+import React, { useRef, useState } from "react";
+import * as yup from "yup";
+import { Form } from "@unform/web";
+import Input from "./Form/input";
+import Textarea from "./Form/textarea";
+import type { FormHandles } from "@unform/core";
+import { Button } from "./Button";
 import "../styles/sectionContato.scss";
 import escritorio from "../assets/escritorio.jpg";
-// import Form from "./Form";
-import React, { useRef } from "react";
-import { Form } from "@unform/web";
-import * as yup from "yup";
-import Input from "../components/Form/input";
-import { Button } from "./Button";
-import type { FormHandles } from "@unform/core";
-import Textarea from "./Form/textarea";
 
 
 
 export function SectionContato() {
+
+
     const formRef = useRef<FormHandles>(null)
 
 
-
-
     async function handleSubmit(data: string, { reset }: any) {
+
         try {
-            let schema = yup.object().shape({
+
+            const schema = yup.object().shape({
                 name: yup.string().required('O nome é obrigatório').min(3, 'Escreva o nome completo'),
                 email: yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
                 tel: yup.string().required('O número de telefone é obrigatório'),
@@ -27,7 +28,7 @@ export function SectionContato() {
                 mensagem: yup.string().required('A sua mensagem é obrigatória').min(5, 'Escreva mais sobre o assunto...')
                     .min(5, 'Escreva mais sobre o assunto...'),
 
-                // createdOn: yup.date().default(() => new Date()),
+                createdOn: yup.date().default(() => new Date()),
             });
 
             await schema.validate(data, {
@@ -52,10 +53,11 @@ export function SectionContato() {
         }
     }
 
+
     return (
 
 
-        <div id="section">
+        <div id="section" >
             <aside>
                 <div className="container-a">
                     <div className="titulo-contato">
@@ -66,8 +68,9 @@ export function SectionContato() {
 
                     </div>
                     <div>
-                        <Form ref={formRef} onSubmit={handleSubmit}>
-                            <Input label="nome" name="name" placeholder="Nome completo" />
+
+                        <Form ref={formRef} onSubmit={handleSubmit} method="POST" action="./email.php">
+                            <Input id="name" label="nome" name="name" placeholder="Nome completo" />
                             {/* <Input name="secret" type="hidden" value="teste" /> */}
                             <Input label="email" name="email" type="email" placeholder="Seu email" />
                             <Input
@@ -84,8 +87,6 @@ export function SectionContato() {
                         </Form>
                     </div>
 
-                    {/* < Form /> */}
-
                 </div>
                 <div className="container-b">
 
@@ -95,8 +96,6 @@ export function SectionContato() {
 
                 </div>
             </aside>
-
-
 
         </div>
 

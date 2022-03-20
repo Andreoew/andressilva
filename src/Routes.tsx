@@ -6,6 +6,7 @@ import {
 
 } from 'react-router-dom';
 
+
 import { Home } from "./pages/Home";
 import { AreaAtuacao } from "./pages/AreaAtuacao";
 import { Blog } from "./pages/Blog";
@@ -21,7 +22,6 @@ export function AppRoutes() {
                 <Route path="/areas-de-atuacao" element={<AreaAtuacao />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/contato" element={<Contato />} />
-
             </Routes >
         </Router >
     )
