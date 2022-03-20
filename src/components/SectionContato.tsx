@@ -7,6 +7,7 @@ import type { FormHandles } from "@unform/core";
 import { Button } from "./Button";
 import "../styles/sectionContato.scss";
 import escritorio from "../assets/escritorio.jpg";
+import "../styles/form.scss";
 
 
 
