@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom"
 import logooo from "../assets/logooo.png";
 import "../styles/header.scss"
+// import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import { DropdownMenuDemo } from "./MenuHeader"
+
 
 export function Header() {
     return (
@@ -12,10 +15,14 @@ export function Header() {
                     <li><Link to="/areas-de-atuacao"><h1>Áreas de Atuação</h1></Link></li>
                     <li><Link to="/blog"><h1>Blog</h1></Link></li>
                     <li><Link to="/contato"><h1>Contato</h1></Link></li>
+
+
                 </ul>
+                < DropdownMenuDemo />
 
 
             </nav>
+
             <hr></hr>
         </div>
     )

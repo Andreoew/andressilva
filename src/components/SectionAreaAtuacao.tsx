@@ -2,10 +2,17 @@ import escritorio from "../assets/escritorio.jpg";
 
 import "../styles/areaAtuacao.scss";
 
-import { styled } from '@stitches/react';
+import { css, styled } from '@stitches/react';
 
 import * as Accordion from '@radix-ui/react-accordion';
 import React from "react";
+
+const custon = css({
+    '@media (max-width:500px)': {
+        width: 600,
+    }
+});
+
 
 const StyledAccordion = styled(Accordion.Root, {
     marginTop: 45,
@@ -21,9 +28,13 @@ const StyledItem = styled(Accordion.Item, {
 
 const StyledHeader = styled(Accordion.Header, {});
 
+
+
 const StyledTrigger = styled(Accordion.Trigger, {
+
+
     height: 50,
-    width: 600,
+    '@import': 'custon',
     borderRadius: 2,
     borderBottomLeftRadius: 0,
     borderBottomRightRadius: 0,
@@ -31,7 +42,9 @@ const StyledTrigger = styled(Accordion.Trigger, {
     background: 'transparent',
     border: '1px solid',
     margin: 2,
-    cursor: 'pointer'
+    cursor: 'pointer',
+
+
 
 });
 
@@ -47,6 +60,8 @@ const StyledPanel = styled(Accordion.Content, {
     marginTop: 0,
 
 });
+
+
 
 
 export function SectionAreaAtuacao() {

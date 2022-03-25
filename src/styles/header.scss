@@ -5,7 +5,12 @@ $hover-nav: #835a15;
 
 
 nav {
-    //    
+
+    // 
+    .c-PJLV {
+        display: none;
+    }
+
     display: block;
     height: 99px;
     background: $bg-header;
@@ -23,6 +28,7 @@ nav {
         padding: 2px;
         margin-left: 20px;
 
+
     }
 
 
@@ -36,7 +42,31 @@ nav {
         padding: 1px;
         font-size: 18px !important;
         text-transform: uppercase;
+
+
     }
+
+    @media(max-width: 500px) {
+        margin-top: auto;
+
+        h1 {
+            // display: inline;
+            // margin: 5px;
+            // padding: 0;
+            display: none;
+        }
+
+        .c-PJLV {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            // margin-right: px;
+        }
+
+
+    }
+
+
 
 }
 
@@ -50,6 +80,11 @@ nav {
 li {
     display: inline-block;
     list-style-type: none;
+
+    @media(max-width: 500px) {
+        margin-top: auto;
+        margin-left: 25%;
+    }
 }
 
 

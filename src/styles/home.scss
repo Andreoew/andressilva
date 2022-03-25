@@ -6,6 +6,8 @@
         border-top: 1px solid #835a15;
 
 
+
+
         .banner-principal {
             height: 800px;
 
@@ -14,6 +16,12 @@
                 height: 100%;
                 // padding: 0;
                 // margin: 0;
+            }
+
+            @media(max-width: 500px) {
+                margin-top: auto;
+
+
             }
 
         }

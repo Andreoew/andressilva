@@ -24,7 +24,7 @@ export function SectionContato() {
             const schema = yup.object().shape({
                 name: yup.string().required('O nome é obrigatório').min(3, 'Escreva o nome completo'),
                 email: yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
-                tel: yup.string().required('O número de telefone é obrigatório'),
+                telefone: yup.string().required('O número de telefone é obrigatório'),
                 assunto: yup.string().required('O assunto é obrigatório'),
                 mensagem: yup.string().required('A sua mensagem é obrigatória').min(5, 'Escreva mais sobre o assunto...')
                     .min(5, 'Escreva mais sobre o assunto...'),
@@ -37,6 +37,7 @@ export function SectionContato() {
             })
 
             console.log(data);
+
 
             formRef?.current?.setErrors({});
 
@@ -52,7 +53,10 @@ export function SectionContato() {
                 formRef?.current?.setErrors(errorMessages);
             }
         }
+
     }
+
+
 
 
     return (
@@ -70,14 +74,14 @@ export function SectionContato() {
                     </div>
                     <div>
 
-                        <Form ref={formRef} onSubmit={handleSubmit} method="POST" action="./email.php">
+                        <Form ref={formRef} onSubmit={handleSubmit} method="POST" >
                             <Input id="name" label="nome" name="name" placeholder="Nome completo" />
                             {/* <Input name="secret" type="hidden" value="teste" /> */}
                             <Input label="email" name="email" type="email" placeholder="Seu email" />
                             <Input
                                 label="Telefone"
-                                name="tel"
-                                type="tel"
+                                name="telefone"
+                                type="telefone"
                                 placeholder="Ex: XX-XXXXX-XXXX"
                                 pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
                             />
@@ -102,4 +106,8 @@ export function SectionContato() {
 
 
     )
+}
+
+function getUser(data: string, arg1: { name: void; email: any; }) {
+    throw new Error("Function not implemented.");
 }

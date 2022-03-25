@@ -15,7 +15,14 @@
         text-align: center;
         color: $text-color;
         border-top: 0.3px solid #d6d2dda8;
-        // border-bottom: 1px solid #d6d2dda8;
+
+
+        @media(max-width: 500px) {
+            height: 1300px;
+
+
+        }
+
 
 
 
@@ -48,28 +55,51 @@
             font-size: 20px;
             margin-top: 1px;
             padding: 1px;
+
+
         }
+
+        @media(max-width: 500px) {
+
+            .titulo-contato h1 {
+                text-align: center;
+                text-align: justify;
+
+            }
+
+        }
+
+
     }
 
 
 
     .container-a {
-        // display: inline-block;
-        // position: relative;
+
 
         width: 650px;
-        // max-width: 95%;
-        // height: 500px;
-        // background: #fff;
         margin: 2 !important;
         margin-top: 30px;
 
         p {
             text-align: justify;
             line-height: 1.5;
+
+
+
         }
 
+        @media(max-width: 500px) {
+            display: inline;
+            position: relative;
 
+            .titulo-contato h1 {
+                display: inline;
+
+
+            }
+
+        }
 
 
 
@@ -95,19 +125,43 @@
                 border-top-right-radius: 25%;
                 border-bottom-left-radius: 25%;
 
+                @media (max-width: 500px) {
+                    @include box-shadow(#d6d2dda8);
+                    position: relative;
+                    height: 50%;
+                    width: 100%;
+                    border-top-right-radius: 25%;
+                    border-bottom-left-radius: 25%;
+                    margin-top: 5px;
+
+                }
+
+
 
             }
+        }
+
+        @media (max-width: 500px) {
+            display: inline;
+            position: relative;
+            padding: 25px;
+
+
+
         }
 
 
     }
 
-    // main {
-    //     background: $bg-expert;
-    //     height: 300px;
-    //     text-align: center;
-    //     color: $text-color2;
-    // }
+    @media(max-width: 500px) {
+        display: inline;
+        position: relative;
+
+        p {
+            padding: 10px;
+        }
+    }
+
 
 
 }

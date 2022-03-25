@@ -1,4 +1,7 @@
 #section {
+
+
+
     //#835adf;  #202024;
     $bg-color: #141318;
     $bg-container-a: #1d1b20;
@@ -49,6 +52,8 @@
         }
 
 
+
+
     }
 
     .container-b,
@@ -68,6 +73,8 @@
             text-align: justify;
             line-height: 1.5;
         }
+
+
 
 
     }
@@ -95,11 +102,18 @@
                 border-bottom-left-radius: 25%;
             }
 
+
+
         }
 
         strong,
         p {
             display: block;
+        }
+
+        @media(max-width: 500px) {
+            margin-top: auto;
+
         }
     }
 

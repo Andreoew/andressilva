@@ -9,6 +9,12 @@
         margin-left: 30px;
 
 
+        @media(max-width: 500px) {
+            margin-top: 100px;
+
+        }
+
+
     }
 
 
@@ -37,6 +43,15 @@
             padding: 0 0 0 1040px;
             height: 250px;
             width: 250px;
+
+            @media(max-width: 500px) {
+
+                padding: 0;
+                height: 100px;
+                width: 100px;
+
+            }
+
         }
 
 
@@ -46,6 +61,8 @@
             line-height: 42px;
             margin-top: 16px;
             color: #f8f8f8;
+
+
         }
 
         p {
@@ -102,11 +119,21 @@
             padding: 0 0 0 950px;
             fill: transparent;
 
+            @media(max-width: 500px) {
+                display: inline;
+                margin-top: auto;
+                padding: 0;
+            }
+
 
         }
 
 
-
+        @media(max-width: 500px) {
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+        }
 
 
 

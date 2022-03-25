@@ -1,8 +1,7 @@
 // import { useRef, useEffect, InputHTMLAttributes } from 'react'
 import { useRef, useEffect, InputHTMLAttributes } from 'react'
 
-import { useField, SubmitHandler, FormHandles } from '@unform/core'
-import { Form } from '@unform/web'
+import { useField } from '@unform/core'
 import React from 'react'
 
 
@@ -22,7 +21,7 @@ interface Props {
     | 'time'
     | 'range'
     | 'search'
-    | 'tel'
+    | 'telefone'
     | 'url'
     | 'week'
     | 'assunto'
