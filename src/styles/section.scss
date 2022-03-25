@@ -62,10 +62,8 @@
         position: absolute;
         text-align: center;
         width: 659px;
-        max-width: 95%;
-        height: 500px;
-        // background: $bg-container-b;
-        // @include box-shadow(#000); 
+        max-width: 100%;
+
         margin: 2;
         margin-top: 30px;
 
@@ -73,6 +71,18 @@
             text-align: justify;
             line-height: 1.5;
         }
+
+        .c-eJeyvP {
+            display: inline-block;
+
+        }
+
+        // #radix-52 {
+        //     display: block;
+        //     position: relative;
+        // }
+
+
 
 
 
@@ -111,10 +121,7 @@
             display: block;
         }
 
-        @media(max-width: 500px) {
-            margin-top: auto;
 
-        }
     }
 
 

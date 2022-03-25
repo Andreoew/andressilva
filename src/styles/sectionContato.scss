@@ -10,7 +10,7 @@
     $text-color2: black;
 
     aside {
-        height: 900px;
+        height: 990px;
         background: $bg-color2;
         text-align: center;
         color: $text-color;
@@ -18,7 +18,7 @@
 
 
         @media(max-width: 500px) {
-            height: 1300px;
+            height: auto;
 
 
         }
