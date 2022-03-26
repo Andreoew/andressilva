@@ -3,9 +3,6 @@ import type Mail from 'nodemailer/lib/mailer'
 import type { AddEmailAccount, IMessage } from '../components/Email/AddEmail'
 
 
-
-
-
 export class MailNodemailerProvider implements AddEmailAccount {
     private readonly transporter: Mail
     constructor() {

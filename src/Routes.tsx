@@ -22,6 +22,7 @@ export function AppRoutes() {
                 <Route path="/areas-de-atuacao" element={<AreaAtuacao />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/contato" element={<Contato />} />
+
             </Routes >
         </Router >
     )

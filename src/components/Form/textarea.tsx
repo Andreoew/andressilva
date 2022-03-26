@@ -1,7 +1,6 @@
 import { useRef, useEffect, TextareaHTMLAttributes } from 'react'
 
 import { useField, SubmitHandler, FormHandles } from '@unform/core'
-import { Form } from '@unform/web'
 import React from 'react'
 
 /**
@@ -50,7 +49,7 @@ export default function Textarea({ name, type, label, ...rest }: TextareaProps) 
             <textarea
                 ref={textareaRef}
                 id={fieldName}
-                defaultValue={defaultValue}
+                // defaultValue={defaultValue}
                 {...rest}
             />
 
